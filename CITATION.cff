@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use FlyVista in research, please cite the software and the FlyWire dataset."
+title: "FlyVista Brain Atlas"
+type: software
+version: 0.1.0-alpha.0
+date-released: 2026-09-03
+authors:
+  - name: "FlyVista contributors"
+license: Apache-2.0
+abstract: "An offline interactive atlas of 78 adult Drosophila neuropil meshes grouped into six functional systems."
+keywords:
+  - Drosophila
+  - connectomics
+  - brain atlas
+  - visualization
+references:
+  - type: article
+    title: "Neuronal wiring diagram of an adult brain"
+    doi: "10.1038/s41586-024-07558-y"

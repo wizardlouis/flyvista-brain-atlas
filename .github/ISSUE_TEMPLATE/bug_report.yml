@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible FlyVista problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open FlyVista
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - macOS Apple Silicon
+        - macOS Intel
+        - Windows 10
+        - Windows 11
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FlyVista version
+      placeholder: 0.1.0-alpha.0
+    validations:
+      required: true

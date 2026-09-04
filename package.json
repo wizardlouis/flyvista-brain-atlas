@@ -1,0 +1,45 @@
+{
+  "name": "flyvista",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Interactive desktop atlas for the adult Drosophila brain",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check:version": "node scripts/check-release-version.mjs",
+    "check": "pnpm check:version && pnpm lint && pnpm test && pnpm build",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tauri-apps/cli": "^2.11.4",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "6.0.2",
+    "eslint": "9.39.4",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.5",
+    "globals": "^17.12.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.69.0",
+    "vite": "8.0.13",
+    "vitest": "^4.1.11"
+  },
+  "type": "module"
+}
