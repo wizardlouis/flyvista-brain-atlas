@@ -16,6 +16,9 @@ jobs:
           - platform: macos-latest
             target: aarch64-apple-darwin
             bundles: dmg
+          - platform: macos-latest
+            target: x86_64-apple-darwin
+            bundles: dmg
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -42,9 +45,11 @@ jobs:
           tagName: v__VERSION__
           releaseName: FlyVista v__VERSION__
           releaseBody: |
-            FlyVista desktop preview release for Apple Silicon Macs.
+            FlyVista desktop preview release for Apple Silicon and Intel Macs.
 
-            This build uses an ad-hoc signature and is not notarized. macOS Gatekeeper may show a warning until Developer ID signing and notarization are configured.
+            The Intel build has passed automated cross-architecture build validation but still awaits testing on a physical Intel Mac.
+
+            These builds use ad-hoc signatures and are not notarized. macOS Gatekeeper may show a warning until Developer ID signing and notarization are configured.
           releaseDraft: false
           prerelease: true
           args: --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}

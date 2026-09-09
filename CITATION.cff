@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use FlyVista in research, please cite the software and the FlyWire dataset."
 title: "FlyVista Brain Atlas"
 type: software
-version: 0.1.0-alpha.0
-date-released: 2026-09-03
+version: 0.1.0-alpha.1
+date-released: 2026-09-09
 authors:
   - name: "FlyVista contributors"
 license: Apache-2.0

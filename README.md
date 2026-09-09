@@ -2,7 +2,7 @@
 
 FlyVista 是一个可离线使用的成年果蝇全脑功能分区可视化软件。它在浏览器或桌面窗口中展示 78 个 FlyWire/JFRC2 神经毡模型，并按六类主要功能系统着色。
 
-> 当前版本：`0.1.0-alpha.0`。GitHub Release 目前仅提供 macOS Apple Silicon 版本；Intel Mac 和 Windows 版本将在完成实机验证后发布。
+> 当前版本：`0.1.0-alpha.1`。GitHub Release 提供 macOS Apple Silicon 和 Intel 版本。Intel 版本已通过自动化跨架构构建验证，仍等待 Intel Mac 实机测试；Windows 版本将在完成实机验证后发布。
 
 ## 主要功能
 
@@ -18,6 +18,7 @@ FlyVista 是一个可离线使用的成年果蝇全脑功能分区可视化软�
 GitHub 仓库建立并发布首个 Release 后，用户可在 Releases 页面下载：
 
 - macOS Apple Silicon：DMG 安装映像
+- macOS Intel：DMG 安装映像（构建验证通过，等待 Intel Mac 实机测试）
 
 Alpha 阶段的安装包使用临时签名且尚未完成 Apple 公证，macOS Gatekeeper 可能显示安全提示。正式公开推广前应完成 Developer ID 签名和 macOS 公证。
 

@@ -1,6 +1,6 @@
 [package]
 name = "flyvista"
-version = "0.1.0-alpha.0"
+version = "0.1.0-alpha.1"
 description = "Interactive desktop atlas for the adult Drosophila brain"
 authors = ["FlyVista contributors"]
 license = "Apache-2.0"

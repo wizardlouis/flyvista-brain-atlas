@@ -4,6 +4,18 @@ All notable changes to FlyVista are documented here.
 
 ## [Unreleased]
 
+## [0.1.0-alpha.1] - 2026-09-09
+
+### Added
+
+- Separate macOS Intel (`x86_64`) DMG builds alongside Apple Silicon (`arm64`) builds.
+- Automated release checksums covering both macOS architectures.
+
+### Known limitations
+
+- The Intel package has passed cross-architecture build validation but still requires testing on a physical Intel Mac.
+- macOS packages use ad-hoc signatures and are not notarized, so Gatekeeper may display a warning.
+
 ## [0.1.0-alpha.0] - 2026-09-03
 
 ### Added
